@@ -25,7 +25,7 @@ int main(void){
     rest = rest % 60;
     second = rest;
 
-    printf("\n%s%i%s%i%s%i%s%i%s%i", "Weeks: ", week, " Days: ", day, " Hours: ", hour, " Minuts: ", minute, " Seconds: ", second);
+    printf("\n%i%s%i%s%i%s%i%s%i%s", week, " Weeks ", day, " Days: ",  hour, " Hours: ", minute, " Minuts: ", second, " Seconds: " );
 
     return 0;
 
