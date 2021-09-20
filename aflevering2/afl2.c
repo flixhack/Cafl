@@ -17,7 +17,7 @@ int main(void){
     second;
 
     printf("Enter seconds: ");
-    scanf("%i", &isec);
+    scanf("%d", &isec);
 
     week = isec / SECONDS_IN_WEEK;
     rest = isec % SECONDS_IN_WEEK;
@@ -29,16 +29,21 @@ int main(void){
     rest = rest % SECONDS_IN_MINUTE;
     second = rest;
 
-    if (week >= 1 ) {
-      printf("\n%i Weeks %i Days %i Hours %i Minutes %i Seconds \n", week, day, hour, minute, second);
-    } else if (day >= 1) {
-      printf("\n%i Days %i Hours %i Minutes %i Seconds \n", day, hour, minute, second);
-    } else if (hour >= 1) {
-      printf("\n%i Hours %i Minutes %i Seconds \n", hour, minute, second);
-    } else if (minute >= 1) {
-      printf("\n%i Minutes %i Seconds \n", minute, second);
-    } else {
-      printf("\n%i Seconds \n", second);
+
+    if (week >= 1)  {
+      printf(week > 1 ? ("\n%i Weeks ") : ("\n%i Week "), week);
+    }
+    if (day >= 1) {
+      printf(day > 1 ? ("%i days ") : ("%i day "), day);
+    }
+    if (hour >= 1) {
+      printf(hour > 1 ? ("%i hours ") : ("%i hour "), hour);
+    }
+    if (minute >= 1) {
+      printf(minute > 1 ? ("%i minutes ") : ("%i minute "), minute);
+    }
+    if (second >= 1) {
+      printf(second > 1 ? ("%i seconds ") : ("%i second "), second);
     }
 
     return 0;
