@@ -15,7 +15,7 @@ int main() {
   }
   printf("\nInput second positive integer: ");
   scanf("%d", &input2);
-  while (input2 < 0) {
+  while (input2 < 1) {
     printf("\ninput second positive integer: ");
     scanf("%d", &input2);
   }
