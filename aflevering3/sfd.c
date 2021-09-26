@@ -10,13 +10,13 @@ int main() {
   printf("Input first positive integer: ");
   scanf("%d", &input1);
   while (input1 < 1) {
-    printf("\ninput first positive integer: ");
+    printf("\nInput first positive integer: ");
     scanf("%d", &input1);
   }
   printf("\nInput second positive integer: ");
   scanf("%d", &input2);
   while (input2 < 1) {
-    printf("\ninput second positive integer: ");
+    printf("\nInput second positive integer: ");
     scanf("%d", &input2);
   }
 
